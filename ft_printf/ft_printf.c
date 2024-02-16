@@ -6,7 +6,7 @@
 /*   By: atedesch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 22:02:49 by atedesch          #+#    #+#             */
-/*   Updated: 2024/02/16 22:05:15 by atedesch         ###   ########.fr       */
+/*   Updated: 2024/02/16 22:17:04 by atedesch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int	ft_printf(const char *str, ...)
 	{
 		if (str[i] == '%')
 		{
-			len += check_type(args, str[i + 1]);
+			len = len + check_type(args, str[i + 1]);
 			i++;
 		}
 		else

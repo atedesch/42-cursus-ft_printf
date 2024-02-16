@@ -6,13 +6,13 @@
 /*   By: atedesch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 21:49:53 by atedesch          #+#    #+#             */
-/*   Updated: 2024/02/16 21:54:40 by atedesch         ###   ########.fr       */
+/*   Updated: 2024/02/16 22:03:46 by atedesch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putchar(char c)
+int	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }

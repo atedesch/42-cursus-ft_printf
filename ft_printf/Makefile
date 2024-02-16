@@ -6,7 +6,7 @@
 #    By: atedesch <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/16 21:51:56 by atedesch          #+#    #+#              #
-#    Updated: 2024/02/16 21:58:21 by atedesch         ###   ########.fr        #
+#    Updated: 2024/02/16 22:06:33 by atedesch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ mandatory_ft	= putchar \
 					putstr \
 					itoa \
 					
+					printf
 
 SRCS			= $(mandatory_ft:%=$(prefix)%.c)
 

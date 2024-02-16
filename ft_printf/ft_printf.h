@@ -6,7 +6,7 @@
 /*   By: atedesch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 21:41:17 by atedesch          #+#    #+#             */
-/*   Updated: 2024/02/16 21:58:27 by atedesch         ###   ########.fr       */
+/*   Updated: 2024/02/16 22:04:00 by atedesch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 #  define NIL_STRING "(nil)"
 # endif
 
-void	ft_putchar(char c);
+int		ft_putchar(char c);
 int		ft_putstr(char *s);
 char	*ft_itoa(int n);
 

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: atedesch <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: atedesch <atedesch@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/16 21:51:56 by atedesch          #+#    #+#              #
-#    Updated: 2024/02/16 23:22:05 by atedesch         ###   ########.fr        #
+#    Updated: 2024/02/21 12:29:45 by atedesch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,13 +14,12 @@ library			= libftprintf
 
 prefix			= ft_
 
-mandatory_ft	= putchar \
+mandatory		= putchar \
 					putstr \
 					itoa \
-					printf \
-					test_main
+					printf
 
-SRCS			= $(mandatory_ft:%=$(prefix)%.c)
+SRCS			= $(mandatory:%=$(prefix)%.c)
 
 OBJS			= $(SRCS:.c=.o)
 
@@ -32,7 +31,7 @@ CFLAGS			= -Wall -Wextra -Werror
 INCLUDES		= ./
 RN				= ar rcs
 LB				= ranlib
-COMP			= #-c
+COMP			= -c
 
 OUTN 			= $(library).a
 

@@ -6,7 +6,7 @@
 /*   By: atedesch <atedesch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 22:02:49 by atedesch          #+#    #+#             */
-/*   Updated: 2024/02/21 12:19:02 by atedesch         ###   ########.fr       */
+/*   Updated: 2024/02/21 17:55:26 by atedesch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	check_type(va_list args, const char c)
 		len = len + ft_putchar(va_arg(args, int));
 	if (c == 's')
 		len = len + ft_putstr(va_arg(args, char *));
-	/* if (c == 'p')
+	/*if (c == 'p')
 		len = len + ft_putpointer(va_arg(args, unsigned long long));
 	if (c == 'd')
 		len = len + ft_putnbr(va_arg(args, int));
@@ -32,7 +32,7 @@ int	check_type(va_list args, const char c)
 	if (c == 'x')
 		len = len + ft_puthex(va_arg(args, unsigned int), c);
 	if (c == 'X')
-		len = len + ft_puthex(va_arg(args, unsigned int), c)*/;
+		len = len + ft_puthex(va_arg(args, unsigned int), c);*/
 	if (c == '%')
 		len = len + ft_putchar('%');
 	return (len);

@@ -6,7 +6,7 @@
 #    By: atedesch <atedesch@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/16 21:51:56 by atedesch          #+#    #+#              #
-#    Updated: 2024/02/21 12:29:45 by atedesch         ###   ########.fr        #
+#    Updated: 2024/02/21 18:03:52 by atedesch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,12 +14,12 @@ library			= libftprintf
 
 prefix			= ft_
 
-mandatory		= putchar \
+mandatory_ft	= putchar \
 					putstr \
 					itoa \
-					printf
+					printf \
 
-SRCS			= $(mandatory:%=$(prefix)%.c)
+SRCS			= $(mandatory_ft:%=$(prefix)%.c)
 
 OBJS			= $(SRCS:.c=.o)
 
@@ -31,14 +31,13 @@ CFLAGS			= -Wall -Wextra -Werror
 INCLUDES		= ./
 RN				= ar rcs
 LB				= ranlib
-COMP			= -c
 
 OUTN 			= $(library).a
 
 NAME			= $(OUTN)
 
 $(NAME):	$(SRCS) $(HEADER)
-	$(CC) $(CFLAGS) $(COMP) -g -I$(INCLUDES) $(SRCS)
+	$(CC) $(CFLAGS) -c -g -I$(INCLUDES) $(SRCS)
 	$(RN) $(NAME) $(OBJS)
 	$(LB) $(NAME)
 
@@ -52,4 +51,7 @@ fclean:	clean
 
 re: fclean all
 
-.PHONY:	all clean fclean re
+main: $(SRCS) $(HEADER)
+	$(CC) $(CFLAGS) -g -I$(INCLUDES) $(SRCS) ft_test_main.c
+
+.PHONY:	all clean fclean re main

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atedesch <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: atedesch <atedesch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 21:41:17 by atedesch          #+#    #+#             */
-/*   Updated: 2024/02/16 22:04:00 by atedesch         ###   ########.fr       */
+/*   Updated: 2024/02/21 18:15:56 by atedesch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,11 @@
 int		ft_putchar(char c);
 int		ft_putstr(char *s);
 char	*ft_itoa(int n);
+int		ft_putpointer(unsigned long long n);
 
 int		ft_printf(const char *str, ...);
 int		ft_putnbr(int n);
 int		ft_puthex(unsigned int n, char c);
 int		ft_putunsigned(unsigned int n);
-int		ft_putpointer(unsigned long long n);
 
 #endif

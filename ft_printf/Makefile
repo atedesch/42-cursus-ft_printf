@@ -6,7 +6,7 @@
 #    By: atedesch <atedesch@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/16 21:51:56 by atedesch          #+#    #+#              #
-#    Updated: 2024/02/21 18:03:52 by atedesch         ###   ########.fr        #
+#    Updated: 2024/02/21 19:17:46 by atedesch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,10 @@ library			= libftprintf
 
 prefix			= ft_
 
-mandatory_ft	= putchar \
+mandatory_ft	= itoa \
+					putchar \
 					putstr \
-					itoa \
+					putnbr \
 					printf \
 
 SRCS			= $(mandatory_ft:%=$(prefix)%.c)

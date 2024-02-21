@@ -1,0 +1,15 @@
+DIFFERENZA TRA %i e %d
+
+In printf, le specifiche di conversione %d e %i sono molto simili 
+e spesso vengono utilizzate in modo intercambiabile, 
+ma c'è una sottile differenza tra di esse:
+
+%d: Questa specifica di conversione viene utilizzata 
+per formattare e stampare valori interi in base decimale. 
+I valori negativi verranno stampati con un segno meno (-) precedente al numero.
+
+%i: Questa specifica di conversione viene utilizzata anche per formattare e stampare valori interi, 
+ma può interpretare il numero in base diversa a seconda del prefisso. 
+Se il numero ha un prefisso 0x o 0X, verrà interpretato come un numero in base esadecimale. 
+Se ha un prefisso 0, verrà interpretato come un numero in base ottale. Altrimenti, verrà interpretato come un numero in base decimale. 
+Se il numero viene preceduto da un segno (+ o -), viene interpretato come un numero con segno.

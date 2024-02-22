@@ -6,7 +6,7 @@
 #    By: atedesch <atedesch@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/16 21:51:56 by atedesch          #+#    #+#              #
-#    Updated: 2024/02/21 19:17:46 by atedesch         ###   ########.fr        #
+#    Updated: 2024/02/22 21:23:38 by atedesch         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,10 @@ prefix			= ft_
 mandatory_ft	= itoa \
 					putchar \
 					putstr \
+					putpointer \
 					putnbr \
+					puthex \
+					putunsigned \
 					printf \
 
 SRCS			= $(mandatory_ft:%=$(prefix)%.c)

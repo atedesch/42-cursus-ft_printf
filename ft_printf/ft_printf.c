@@ -6,13 +6,13 @@
 /*   By: atedesch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 22:02:49 by atedesch          #+#    #+#             */
-/*   Updated: 2024/02/26 17:54:17 by atedesch         ###   ########.fr       */
+/*   Updated: 2024/02/26 19:21:19 by atedesch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	check_type(va_list args, const char c)
+int	input_type(va_list args, const char c)
 {
 	int	len;
 
@@ -51,7 +51,7 @@ int	ft_printf(const char *str, ...)
 	{
 		if (str[i] == '%')
 		{
-			len = len + check_type(args, str[i + 1]);
+			len = len + input_type(args, str[i + 1]);
 			i++;
 		}
 		else

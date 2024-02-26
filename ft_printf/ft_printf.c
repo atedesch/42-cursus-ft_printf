@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: atedesch <atedesch@student.42.fr>          +#+  +:+       +#+        */
+/*   By: atedesch <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/16 22:02:49 by atedesch          #+#    #+#             */
-/*   Updated: 2024/02/22 21:10:02 by atedesch         ###   ########.fr       */
+/*   Updated: 2024/02/26 17:54:17 by atedesch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ int	ft_printf(const char *str, ...)
 	va_start(args, str);
 	i = 0;
 	len = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		if (str[i] == '%')
 		{
